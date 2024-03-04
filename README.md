@@ -1,9 +1,10 @@
 # Car Price Predictor
 
 This is a machine learning project which takes data of electric cars and manipulates it in order to accurately predict the price of a car with different elements.
-Utilizing Jupyter Notebook along with Python, the project contains various attributes of electric cars and properly adjusts them for machine learning techniques in order to read them.
+Utilizing Jupyter Notebook along with Python, the project contains various attributes of electric cars and properly adjusts them for machine learning techniques in order to read them. Various models were used in order to have a better result and compare difference in
+accuracy.
 
-# Dataset
+## Dataset
 The dataset used in this project contains the following columns:
 
 Name: Name of the electric car model
@@ -24,36 +25,39 @@ Fast Charge Speed (km/h): Fast charging speed of the car in kilometers per hour
 
 Price (UK): Price of the car in the UK market (target variable)
 
-# Preprocessing
+## Preprocessing
 Removed missing values from the dataset.
 Converted categorical variables into numerical format.
 Removed outliers from the target variable.
 
-Models Used
+## Models Used
 Linear Regression
+
 Random Forest Regressor
+
 Gradient Boosting Regressor
+
 XGBoost Regressor
 
-# Evaluation
+## Evaluation
 Evaluated the models using R-squared score.
 Random Forest Regressor achieved the highest R-squared score among the models.
 GUI Application
 Implemented a Tkinter GUI application for predicting car prices based on user input.
 The user can input various attributes of the electric car, and the application predicts the price using the trained Random Forest Regressor model.
 
-# Files
+## Files
 Make sure the files are in the same directory before use.
 electricCars.csv: Dataset containing information about electric cars.
 electricCar_price_predictor: Trained Random Forest Regressor model saved using joblib.
 electric_car_price_prediction.py: Python script containing the code for preprocessing, training, evaluating models, and creating the Tkinter GUI application.
 
-# Usage
+## Usage
 Clone the repository to your local machine.
 Install the required dependencies using pip install -r requirements.txt.
 Run the electric_car_price_prediction.py script to preprocess the data, train the models, and create the GUI application.
 
-# Requirements
+## Requirements
 Python 3.x
 
 Pandas
